@@ -11,7 +11,7 @@ router.use('/:name', async (req, res, next) => {
       id: response.data.data[0].id,
       matches: response.data.data[0].relationships.matches.data
     };
-    res.json(player);
+    res.status(200).json(player);
   } catch (err) {
     next(err);
   }

@@ -10,7 +10,7 @@ router.use('/:id', async (req, res, next) => {
       `/players/${req.params.id}/seasons/${SEASON}`
     );
     const stats = response.data.data.attributes.gameModeStats;
-    res.json(stats);
+    res.status(200).json(stats);
   } catch (err) {
     next(err);
   }
