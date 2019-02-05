@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const pubg = require('./pubg');
-const { SEASON } = require('../secret');
+const { SEASON } =require('../secret');
 
 // router.use('/', (req, res, next) => res.send('Hello from Stats'));
 

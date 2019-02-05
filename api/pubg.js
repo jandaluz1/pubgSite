@@ -1,5 +1,5 @@
 const axios = require('axios');
-const { PUBGTOKEN } = require('../secret');
+const { PUBGTOKEN } =require('../secret');
 
 const pubg = axios.create({
   baseURL: 'https://api.pubg.com/shards/steam',
